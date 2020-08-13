@@ -18,8 +18,8 @@ export class DashboardComponent implements OnInit {
           index: 0,
           isActive: true
       }, {
-          label: 'Users',
-          link: './userList',
+          label: 'Employees',
+          link: './employeeList',
           index: 1,
           isActive: false
       } 

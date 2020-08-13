@@ -8,11 +8,11 @@ import { EmployeeRouteAuthGuard } from './AuthGuards/employeeRoute.components';
 
 const routes: Routes = [{
   path: '',
-  redirectTo: 'userMangement',
+  redirectTo: 'employeeManagement',
   pathMatch: 'full'
 },
 {
-  path: 'userMangement',
+  path: 'employeeManagement',
   component: LoginComponent
 },
 {
@@ -22,7 +22,7 @@ const routes: Routes = [{
     path: 'home',
     component: HomeComponent
 },{
-    path : 'userList',
+    path : 'employeeList',
     component: EmployeeComponent,
     canActivate  : [EmployeeRouteAuthGuard]
   }]
